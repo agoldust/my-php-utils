@@ -1,5 +1,5 @@
 <?php
-namespace Goldoust\Utils\Notifiers;
+namespace AGoldoust\Utils\Notifiers;
 
 /**
  * A simple WhatsApp notifier for sending messages via the UltraMsg API.

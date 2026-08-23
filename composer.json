@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Agoldoust\\MyPhpUtils\\": "src/"
+            "Agoldoust\\Utils\\": "src/"
         }
     },
     "authors": [

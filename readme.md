@@ -19,4 +19,4 @@ A clean, PSR-4 compliant PHP utility package for handling web page checking (suc
 Install the package via Composer:
 
 ```bash
-composer require goldoust/my-php-utils
+composer require agoldoust/my-php-utils

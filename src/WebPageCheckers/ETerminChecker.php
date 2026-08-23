@@ -1,5 +1,5 @@
 <?php
-namespace Goldoust\Utils\WebPageCheckers;
+namespace AGoldoust\Utils\WebPageCheckers;
 
 /**
  * ETerminChecker is a utility class for checking available time slots from the eTermin API.
