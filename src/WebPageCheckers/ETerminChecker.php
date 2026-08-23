@@ -7,14 +7,21 @@ namespace AGoldoust\Utils\WebPageCheckers;
  */
 class ETerminChecker {
     private string $baseUrl = "https://www.etermin.net/api/timeslots";
+
+    /** @var string The default service ID for Umschreibung ausländischer Fahrerlaubnisse */
+    public const SERVICE_ID_UMSCHREIBUNG = "110023";
     
+    /**Web ID for Umschreibung ausländischer Fahrerlaubnisse */
+    public const WEB_ID_DUISBURG_UMSCHREIBUNG = "qterminstadtduisburgstva";
+
+
     /**
      *  Checks available time slots for a given service and web ID.
-     *  @param string $serviceId The service ID to check for available slots (default is "110023").
-     *  @param string $webId The web ID associated with the service (default is "qterminstadtduisburgstva").
+     *  @param string $serviceId The service ID to check for available slots, values are in <EtrminChecker::SERVICE_ID_></EtrminChecker::SERVICE_ID_>
+     *  @param string $webId The web ID associated with the service, values are in <EtrminChecker::WEB_ID_></EtrminChecker::WEB_ID_>
      *  @return array An associative array containing the available time slots.
      */
-    public function checkAvailableSlots(string $serviceId = "110023", string $webId = "qterminstadtduisburgstva"): array {
+    public function checkAvailableSlots(string $serviceId, string $webId): array {
         $today = date('Y-m-d');
 
         $params = [

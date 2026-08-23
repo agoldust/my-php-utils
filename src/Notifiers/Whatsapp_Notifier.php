@@ -14,7 +14,7 @@ class Whatsapp_Notifier {
      * @param string $instanceId The instance ID for the UltraMsg API.
      * @param string $token The API token for authentication.
      */
-    public function __construct(string $instanceId = 'instance189285', string $token = '2xgd708819jtesy1') {
+    public function __construct(string $instanceId, string $token) {
         $this->instanceId = $instanceId;
         $this->token = $token;
     }
