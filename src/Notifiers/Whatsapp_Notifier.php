@@ -3,7 +3,7 @@ namespace AGoldoust\Utils\Notifiers;
 
 /**
  * A simple WhatsApp notifier for sending messages via the UltraMsg API.
- * API URL: https://ultramsg.com/
+ * API URL: https://ultramsg.com/ 
  */
 class Whatsapp_Notifier {
     private string $instanceId;
